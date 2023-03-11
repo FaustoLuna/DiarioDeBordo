@@ -1,0 +1,251 @@
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+header{
+	background-color: #333;
+	height: 3em;
+	color: #FFF;
+	margin-bottom: 1em; 
+}
+
+header h1{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+header h2{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+header .container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.container{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2{
+	font-size: 3em;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+}
+
+.container_tabela:first-child{
+	width: 10%;
+}
+
+.container_tabela:nth-last-child(2){
+	width: 8%;
+}
+.container_tabela:nth-last-child(3){
+	width: 50%;
+}
+.container_tabela:nth-last-child(4){
+	width: 20%;
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 5em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+	
+}
+.campo_nome{
+	margin: 0;
+	padding-bottom: 5em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+	width: 100%;
+	
+}
+
+.campo-comentario{
+	height: 100px;
+}
+
+.grupo{
+	width: 50%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+.grupo_nome{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 20px;
+	
+}
+
+.grupo_nome__nome{
+	width: 8%;
+}
+
+.grupo_nome__status{
+	margin-left: 40px;
+}
+
+button{
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#0c8cd3;
+	border-color: #04324c;
+	width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+
+}
+
+button:active{
+	margin-top:0px;
+	border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+
+}
+
+
+#buscar-registros{
+	margin-left: 80%;
+}
+
+.adicionar-registro{
+    margin-top: 30px;
+}
+
+.campo-invalido{
+	border: 1px solid red;
+	
+}
+
+.registro-invalido{
+
+	background-color: lightcoral;
+}
+
+#mensagens-erro{
+	color: rgb(20, 202, 96);
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.fadeOut {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#filtrar-tabela{
+	width: 200px;
+	height: 35px;
+	margin-bottom: 10px;
+}
+
+.filtrar{
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.invisivel{
+	display: none;
+	transition: 0,2s;
+	
+}
+
+#erro-ajax{
+	font-weight: bold;
+	color: red;
+	font-size: 25px;
+	margin: 30%;
+
+}
+
+.colorR{
+	color: rgb(236, 43, 43);
+	font-weight: bold;
+	
+}
+
+.colorB{
+	color: rgb(13, 77, 216);
+	font-weight: bold;
+}
+
+.colorG{
+	color: rgb(37, 168, 43);
+	font-weight: bold;
+}
+
+.colorO{
+	color: rgb(202, 107, 19);
+	font-weight: bold;
+}
+
+.esconder{
+	display: none;
+}

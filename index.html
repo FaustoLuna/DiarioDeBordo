@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Diário de Bordo TR Digital BAnking</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1 class="titulo">Diário de  Bordo</h1>
+			</div>
+		</header>
+		<main>
+
+			<section class="container">
+			    <h2 id="titulo-form">Adicionar Novo Apontamento</h2>
+			    <ul id="mensagens-erro">
+			    	
+			    </ul>
+			    <span id="erro-ajax" class="invisivel">Erro ao buscar os registros.</span>
+			   	
+			    <form id="form-adiciona">
+					<div class="grupo_nome">
+						<div class="grupo_nome__nome">
+							<label for="nome">Nome:</label>
+							<select id="nome" class="grupo_nome__select">
+								<option>Fausto Luna</option>
+								<option>Fernando Batista</option>
+								<option>Gustavo Barbosa</option>
+								<option>Larissa Andrade</option>
+								<option>Pedro Marmo</option>
+							</select> 
+						</div>
+						<div class="grupo_nome__status">
+							<label for="status">Status</label>
+							<select id="status" class="grupo_nome__select">
+								<option>Concluido</option>
+								<option>Pendente</option>
+								<option>Aguardando Coordenador</option>
+								<option>Aguardadno Desenvolvimento</option>
+								<option>Aguardadno GP</option>
+							</select>  
+						</div>
+					</div>	
+			        <div class="grupo">
+			            <label for="assunto">Assunto</label>
+			            <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto" class="campo campo-medio" required>
+			        </div>
+			        <div class="grupo">
+			            <label for="comentario">Comentario</label>
+			            <textarea id="comentario" name="comentario" type="text" placeholder="Digite a comentario do seu registro" class="campo campo-comentario" required></textarea>
+			        </div>
+			        
+			        <button id="adicionar-registro" class="botao bto-principal">Adicionar</button>
+			        
+					<label for="filtrar-tabela" class="filtrar">Filtro:</label>
+					<input type="text" name="filtro" id="filtrar-tabela" placeholder="Buscar registro">
+				
+			    </form>
+			</section>
+ 
+			<section class="container">
+				<h2>Registros:</h2>
+				<table>
+					<thead>
+						<tr>
+							<th class="container_tabela">Nome</th>
+							<th class="container_tabela">Assunto</th>
+							<th class="container_tabela">Comentario</th>
+							<th class="container_tabela">Status</th>
+							<th class="container_tabela">Data</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-registros">
+						<tr class="registro esconder" id="primeiro-registro" >
+							<td class="info-nome"></td>
+							<td class="info-assunto"></td>
+							<td class="info-comentario"></td>
+							<td class="info-status"></td>
+							<td class="info-data"></td>
+						</tr>	
+					</tbody>
+				</table>
+			</section>
+		</main>
+		
+		<script src="js/form.js"></script>
+		<script src="js/remover-registro.js"></script>
+		<script src="js/filtra.js"></script>
+		<script src="js/status.js"></script>		
+	</body>
+</html>
