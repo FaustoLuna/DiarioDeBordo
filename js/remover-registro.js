@@ -5,7 +5,7 @@ var tabela = document.querySelector("tbody");
 
 	var senha = prompt("Digite a senha para realizar a exclusão do Registro")
 
-	if (senha === "Xy44629011*") {
+	if (senha === "123456") {
 		event.target.classList.add("fadeOut");
 
  		setTimeout(function(){
