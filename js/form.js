@@ -5,6 +5,7 @@ var botaoAdicionar = document.querySelector("#adicionar-registro");
 			var form = document.querySelector("#form-adiciona") 
 			var regristro = obtemRegistroDoFormulario(form);
 
+
 			adicionaRegistroNaTabela(regristro);
 			
 			form.reset();
@@ -49,21 +50,24 @@ var botaoAdicionar = document.querySelector("#adicionar-registro");
 				nome: form.nome.value,
 				assunto: form.assunto.value,
 				comentario: form.comentario.value,
-				status: form.status.value,	
+				status: form.status.value,					
 			}			
+			
 			return regristro;
 		}
+			
 
 		function montaTr(registro){
-			var pacienteTr = document.createElement("tr"); 
-			pacienteTr.classList.add("registro");
+			var registroTr = document.createElement("tr"); 
+			registroTr.classList.add("registro");
 	
-			pacienteTr.appendChild(montaTd(registro.nome, "info-nome"));                     
-			pacienteTr.appendChild(montaTd(registro.assunto, "info-assunto"));
-			pacienteTr.appendChild(montaTd(registro.comentario, "info-comentario"));
-			pacienteTr.appendChild(montaTd(registro.status, "info-status"));
-			pacienteTr.appendChild(montaTd(dataHora, "info-data"));
-
+			registroTr.appendChild(montaTd(registro.nome, "info-nome"));                     
+			registroTr.appendChild(montaTd(registro.assunto, "info-assunto"));
+			registroTr.appendChild(montaTd(registro.comentario, "info-comentario"));
+			registroTr.appendChild(montaTd(registro.status, "info-status"));
+			registroTr.appendChild(montaTd(dataHora, "info-data"));
+			registroTr.appendChild(montaTd(iconeX, "info-action"));
+			
 			var data = new Date()
 			const dia = String(data.getDate()).padStart(2, '0')
 			const mes = String(data.getMonth()+1).padStart(2, '0')
@@ -77,7 +81,9 @@ var botaoAdicionar = document.querySelector("#adicionar-registro");
 	
 			dataHora = `${dataAtual} - ${horaAtual}`
 
-			return pacienteTr;	
+			iconeX = "X"
+			
+			return registroTr;	
 		}
 
 		function montaTd(dado,classe){
@@ -99,8 +105,14 @@ var botaoAdicionar = document.querySelector("#adicionar-registro");
 			const horaAtual = `${horas}:${minutos}:${segundos}`
 	
 			dataHora = `${dataAtual} - ${horaAtual}`
-		
-		
+	
+			
+			var icone = new Date()
+			iconeX = "X"
+
+    	
+			
+
 	
 
 		

@@ -5,6 +5,9 @@
 		<title>Diário de Bordo TR Digital BAnking</title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script src="https://kit.fontawesome.com/ee72cfd0cf.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.2.0/bcrypt.js"></script>
+		
 	</head>
 	<body>
 		<header>
@@ -15,7 +18,7 @@
 		<main>
 
 			<section class="container">
-			    <h2 id="titulo-form">Adicionar Novo Apontamento</h2>
+			    <h2 id="titulo-form">Adicionar Novo Apontamento </h2>
 			    <ul id="mensagens-erro">
 			    	
 			    </ul>
@@ -48,13 +51,14 @@
 			            <label for="assunto">Assunto</label>
 			            <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto" class="campo campo-medio" required>
 			        </div>
+					
 			        <div class="grupo">
 			            <label for="comentario">Comentario</label>
 			            <textarea id="comentario" name="comentario" type="text" placeholder="Digite a comentario do seu registro" class="campo campo-comentario" required></textarea>
 			        </div>
 			        
 			        <button id="adicionar-registro" class="botao bto-principal">Adicionar</button>
-			        
+						        
 					<label for="filtrar-tabela" class="filtrar">Filtro:</label>
 					<input type="text" name="filtro" id="filtrar-tabela" placeholder="Buscar registro">
 				
@@ -70,7 +74,8 @@
 							<th class="container_tabela">Assunto</th>
 							<th class="container_tabela">Comentario</th>
 							<th class="container_tabela">Status</th>
-							<th class="container_tabela">Data</th>
+							<th class="container_tabela">Data</th>	
+							<th class="container_tabela">Excluir</th>					
 						</tr>
 					</thead>
 					<tbody id="tabela-registros">
@@ -79,7 +84,8 @@
 							<td class="info-assunto"></td>
 							<td class="info-comentario"></td>
 							<td class="info-status"></td>
-							<td class="info-data"></td>
+							<td class="info-data"></td>	
+							<td class="info-action" id="delete"></td>												
 						</tr>	
 					</tbody>
 				</table>
