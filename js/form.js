@@ -26,7 +26,7 @@ var botaoAdicionar = document.querySelector("#adicionar-registro");
 			var tabela = document.querySelector("#tabela-registros");		
 			var registroStatus = registroTr.querySelector(".info-status")
 			
-			tabela.appendChild(registroTr);
+			tabela.insertBefore(registroTr, tabela.firstChild);
 
 			if (registroStatus.textContent == "Concluido") {
 				registroStatus.setAttribute('class','colorG info-status')
@@ -40,7 +40,6 @@ var botaoAdicionar = document.querySelector("#adicionar-registro");
 			if (registroStatus.textContent == "Aguardadno Desenvolvimento" || registroStatus.textContent == "Aguardadno GP") {
 				registroStatus.setAttribute('class','colorO info-status')
 			}
-
 		}
 
 		function exibeMensagensDeErro(erros){
@@ -117,10 +116,6 @@ var botaoAdicionar = document.querySelector("#adicionar-registro");
 			
 			var icone = new Date()
 			iconeX = "X"
-
-    	
-			
-
 	
 
 		
