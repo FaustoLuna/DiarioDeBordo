@@ -282,6 +282,27 @@ label{
 }
 
 .urgente{
-	background-color: red;
+	background-color: rgb(216, 55, 55);
 
 }
+
+.instrucoes{
+	position: absolute;
+	right: 20%;
+	top: 5%;
+	padding: 15px;
+	width: 350px;
+	height: 60px;
+	color: white;
+	background-color: #333;
+	border-radius: 20px;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+.instrucoes_titulo{
+	font-weight: bold;
+	margin-bottom: 5px;
+
+}
+
+

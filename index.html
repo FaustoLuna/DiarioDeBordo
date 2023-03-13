@@ -51,24 +51,29 @@
 			            <label for="comentario">Comentario</label>
 			            <textarea id="comentario" name="comentario" type="text" placeholder="Digite a comentario do seu registro" class="campo campo-comentario" required></textarea>
 			        </div>
+					<div class="instrucoes">
+						<p class="instrucoes_titulo">INFORMAÇÕES:</p>
+						<p>Clique 2x no campo para destacar um registro</p>
+					</div>
+
 			        <div>
 			       		<button id="adicionar-registro" class="botao bto-principal">Adicionar</button>
 					</div>
 						
 					<div class="filtros">
-						<label for="filtrar-tabela" class="filtrar">Registro:</label>
-						<input type="text" class="filtros_registro" name="filtro" id="filtrar-registro" placeholder="Buscar registro">
+						<label for="filtrar-tabela" class="filtrar">Filtrar por Nome:</label>
+						<input type="text" class="filtros_registro" name="filtro" id="filtrar-registro" placeholder="Digite um nome">
 
 						
 
-						<label for="nome" class="filtrar">Status:</label>
+						<label for="nome" class="filtrar">Filtrar por Status:</label>
 							<select id="filtrar-status" class="filtra">
 								<option>Todos</option>
 								<option>Concluido</option>
 								<option>Pendente</option>
 								<option>Aguardando Coordenador</option>
-								<option>Aguardadno Desenvolvimento</option>
-								<option>Aguardadno GP</option>
+								<option>Aguardando Desenvolvimento</option>
+								<option>Aguardando GP</option>
 							</select> 
 
 						<ul id="mensagens-erro"></ul>
