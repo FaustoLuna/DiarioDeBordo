@@ -143,44 +143,34 @@ label{
 	margin-left: 40px;
 }
 
-button{
-	padding: .5em 2em;
-	border: 0;
-	border-bottom: 3px solid;
+.botao{
 	font-size: 1.2em;
 	cursor: pointer;
-	margin: 0;
-	margin-top: -3px;
 	color: #fff;
 	background-color:#0c8cd3;
 	border-color: #04324c;
 	width: 20%;
-    display: block;
-    clear: both;
-    margin: 10px 0px;
-
+	height: 40px;
+    margin: 10px 0px 10px 15%;
+	border-radius: 5px;
 }
 
-button:active{
-	margin-top:0px;
-	border: 0;
+.botao:hover{
+	transform: scale(1.04);
+	transition: 100ms ease-in-out;
 }
 
-button[disabled=disabled], button:disabled {
-    background-color: gray;
-	border-color: darkgray;
-
-
+.botao:active{
+	transform: scale(0.98);
+	transition: 100ms ease-in-out;
 }
+
 
 
 #buscar-registros{
 	margin-left: 80%;
 }
 
-.adicionar-registro{
-    margin-top: 30px;
-}
 
 .campo-invalido{
 	border: 1px solid red;
@@ -196,6 +186,8 @@ button[disabled=disabled], button:disabled {
 	color: rgb(20, 202, 96);
 	font-weight: bold;
 	font-size: 1.2rem;
+	margin-left: 2%;
+	margin-top: 0.5%;
 }
 
 .fadeOut {
@@ -203,16 +195,6 @@ button[disabled=disabled], button:disabled {
 	transition: 0.5s;
 }
 
-#filtrar-tabela{
-	width: 200px;
-	height: 35px;
-	margin-bottom: 10px;
-}
-
-.filtrar{
-	font-weight: bold;
-	font-size: 25px;
-}
 
 .invisivel{
 	display: none;
@@ -271,4 +253,30 @@ button[disabled=disabled], button:disabled {
 	transform: scale(1.3);
 	transition: 100ms ease-in-out;
 	cursor: pointer;	
+}
+
+
+.filtros{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.filtros_registro{
+	margin-right: 20px;
+}
+
+#filtrar-tabela{
+	width: 200px;
+	height: 35px;
+	margin-bottom: 10px;
+}
+
+.filtrar{
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 0.2%;
+	margin-right: 0.5%;
 }

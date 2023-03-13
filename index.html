@@ -18,11 +18,7 @@
 
 			<section class="container">
 			    <h2 id="titulo-form">Adicionar Novo Apontamento </h2>
-			    <ul id="mensagens-erro">
-			    	
-			    </ul>
-			    <span id="erro-ajax" class="invisivel">Erro ao buscar os registros.</span>
-			   	
+		
 			    <form id="form-adiciona">
 					<div class="grupo_nome">
 						<div class="grupo_nome__nome">
@@ -55,17 +51,27 @@
 			            <label for="comentario">Comentario</label>
 			            <textarea id="comentario" name="comentario" type="text" placeholder="Digite a comentario do seu registro" class="campo campo-comentario" required></textarea>
 			        </div>
-			        
-			        <button id="adicionar-registro" class="botao bto-principal">Adicionar</button>
-						        
-					<label for="filtrar-tabela" class="filtrar">Filtro:</label>
-					<input type="text" name="filtro" id="filtrar-tabela" placeholder="Buscar registro">
-				
+			        <div>
+			       		<button id="adicionar-registro" class="botao bto-principal">Adicionar</button>
+					</div>
+						
+					<div class="filtros">
+						<label for="filtrar-tabela" class="filtrar">Registro:</label>
+						<input type="text" class="filtros_registro" name="filtro" id="filtrar-tabela" placeholder="Buscar registro">
+
+						<label for="filtrar-tabela" class="filtrar">Status:</label>
+						<input type="text" class="filtros_status" name="filtro" id="filtrar-tabela" placeholder="Buscar registro">
+
+						<ul id="mensagens-erro"></ul>
+						
+					</div>
+
 			    </form>
 			</section>
  
 			<section class="container">
 				<h2>Registros:</h2>
+				
 				<table>
 					<thead>
 						<tr>

@@ -9,8 +9,16 @@ var botaoAdicionar = document.querySelector("#adicionar-registro");
 			adicionaRegistroNaTabela(regristro);
 			
 			form.reset();
-			var mensagensErro = document.querySelector("#mensagens-erro");
-			mensagensErro.innerHTML = "Registro Adicionado com sucesso";
+
+			setTimeout(function() {				
+				setTimeout(function() {
+					var mensagensErro = document.querySelector("#mensagens-erro");
+					mensagensErro.innerHTML = "Registro Adicionado com sucesso"; 
+				},100)			  
+				var mensagensErro = document.querySelector("#mensagens-erro");
+				mensagensErro.innerHTML = ""; 
+			  },100)
+		
 });
 
 		function adicionaRegistroNaTabela(regristro){
