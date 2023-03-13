@@ -29,16 +29,16 @@ var botaoAdicionar = document.querySelector("#adicionar-registro");
 			tabela.appendChild(registroTr);
 
 			if (registroStatus.textContent == "Concluido") {
-				registroStatus.setAttribute('class','colorG')
+				registroStatus.setAttribute('class','colorG info-status')
 			}
 			if (registroStatus.textContent == "Pendente") {
-				registroStatus.setAttribute('class','colorR')
+				registroStatus.setAttribute('class','colorR info-status')
 			}			
 			if (registroStatus.textContent == "Aguardando Coordenador") {
-				registroStatus.setAttribute('class','colorB')
+				registroStatus.setAttribute('class','colorB info-status')
 			}			
 			if (registroStatus.textContent == "Aguardadno Desenvolvimento" || registroStatus.textContent == "Aguardadno GP") {
-				registroStatus.setAttribute('class','colorO')
+				registroStatus.setAttribute('class','colorO info-status')
 			}
 
 		}

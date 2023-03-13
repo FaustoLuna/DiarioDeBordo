@@ -57,13 +57,22 @@
 						
 					<div class="filtros">
 						<label for="filtrar-tabela" class="filtrar">Registro:</label>
-						<input type="text" class="filtros_registro" name="filtro" id="filtrar-tabela" placeholder="Buscar registro">
+						<input type="text" class="filtros_registro" name="filtro" id="filtrar-registro" placeholder="Buscar registro">
 
-						<label for="filtrar-tabela" class="filtrar">Status:</label>
-						<input type="text" class="filtros_status" name="filtro" id="filtrar-tabela" placeholder="Buscar registro">
+						
+
+						<label for="nome">Status:</label>
+							<select id="filtrar-status" class="filtra">
+								<option>Todos</option>
+								<option>Concluido</option>
+								<option>Pendente</option>
+								<option>Aguardando Coordenador</option>
+								<option>Aguardadno Desenvolvimento</option>
+								<option>Aguardadno GP</option>
+							</select> 
 
 						<ul id="mensagens-erro"></ul>
-						
+
 					</div>
 
 			    </form>
@@ -88,7 +97,7 @@
 							<td class="info-nome"></td>
 							<td class="info-assunto"></td>
 							<td class="info-comentario"></td>
-							<td class="info-status"></td>
+							<td class="info-status" id="info-s"></td>
 							<td class="info-data"></td>	
 							<td class="info-action" id="delete"></td>												
 						</tr>	
