@@ -187,7 +187,8 @@ label{
 	font-weight: bold;
 	font-size: 1.2rem;
 	margin-left: 2%;
-	margin-top: 0.5%;
+	margin-top: 5%;
+	width: 400px;
 }
 
 .fadeOut {
@@ -258,27 +259,24 @@ label{
 
 .filtros{
 	display: flex;
-	flex-direction: row;
 	justify-content: flex-start;
-	margin-top: 20px;
+	margin-top: 20px;	
 	margin-bottom: 20px;
 }
 
 .filtros_registro{
-	margin-right: 20px;
+	width: 400px;
+	height: 40px;
 }
 
-#filtrar-tabela{
-	width: 200px;
-	height: 35px;
-	margin-bottom: 10px;
+.filtros_div{
+	margin-right: 40px;
 }
 
-.filtrar{
+.filtrar_label{
 	font-weight: bold;
-	font-size: 25px;
-	margin-top: 0.2%;
-	margin-right: 0.5%;
+	font-size: 17px;
+	width: 100%;
 }
 
 .urgente{

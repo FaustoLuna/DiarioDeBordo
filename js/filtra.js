@@ -1,6 +1,6 @@
-var campoFiltroR = document.querySelector("#filtrar-registro");
+var campoFiltroN = document.querySelector("#filtrar-registro");
 
-campoFiltroR.addEventListener("input", function(){
+campoFiltroN.addEventListener("input", function(){
 	
 	var registros = document.querySelectorAll(".registro");
 	
@@ -47,6 +47,34 @@ campoFiltroS.addEventListener("input", function(){
 						registro.classList.remove("invisivel");
 					}
 				}
+		}
+	}else{
+		for (var i = 0; i < registros.length; i++) {
+			var registro = registros[i];
+			registro.classList.remove("invisivel");
+		}
+	}
+});
+
+
+var campoFiltroD = document.querySelector("#filtrar-data");
+
+campoFiltroD.addEventListener("input", function(){
+	
+	var registros = document.querySelectorAll(".registro");
+	
+	if( this.value.length > 0){
+		for( var i = 0; i < registros.length ; i++){
+			var registro = registros[i];
+			var tdData = registro.querySelector(".info-data");
+			var data = tdData.textContent;
+			var expressao = new RegExp(this.value,"i");
+
+			if(!expressao.test(data)){
+				registro.classList.add("invisivel");
+			}else{
+				registro.classList.remove("invisivel");
+			}
 		}
 	}else{
 		for (var i = 0; i < registros.length; i++) {

@@ -59,27 +59,33 @@
 			        <div>
 			       		<button id="adicionar-registro" class="botao bto-principal">Adicionar</button>
 					</div>
-						
+					
 					<div class="filtros">
-						<label for="filtrar-tabela" class="filtrar">Filtrar por Nome:</label>
-						<input type="text" class="filtros_registro" name="filtro" id="filtrar-registro" placeholder="Digite um nome">
+						<div class="filtros_div">
+							<label for="filtrar-tabela" class="filtrar_label">Filtrar por Nome:</label>
+							<input type="text" class="filtros_registro" name="filtro" id="filtrar-registro" placeholder="Digite um nome">
+						</div>
 
-						
+						<div class="filtros_div">
+							<label for="filtrar-tabela" class="filtrar_label">Filtrar por Data:</label>
+							<input type="text" class="filtros_registro" name="filtro" id="filtrar-data" placeholder="Digite a data como no registro">
+						</div>
 
-						<label for="nome" class="filtrar">Filtrar por Status:</label>
-							<select id="filtrar-status" class="filtra">
-								<option>Todos</option>
-								<option>Concluido</option>
-								<option>Pendente</option>
-								<option>Aguardando Coordenador</option>
-								<option>Aguardando Desenvolvimento</option>
-								<option>Aguardando GP</option>
-							</select> 
-
-						<ul id="mensagens-erro"></ul>
-
+						<div class="filtros_div">
+							<label for="nome" class="filtrar_label">Filtrar por Status:</label>
+								<select id="filtrar-status" class="filtra">
+									<option>Todos</option>
+									<option>Concluido</option>
+									<option>Pendente</option>
+									<option>Aguardando Coordenador</option>
+									<option>Aguardando Desenvolvimento</option>
+									<option>Aguardando GP</option>
+								</select> 		
+						</div>
+						<div>
+							<ul id="mensagens-erro"></ul>
+						</div>		
 					</div>
-
 			    </form>
 			</section>
  
