@@ -44,7 +44,7 @@ section{
 }
 
 section h2{
-	font-size: 3em;
+	font-size: 2em;
 	display: block;
 	padding-bottom: .5em;
 	border-bottom: 1px solid #ccc;
@@ -53,7 +53,7 @@ section h2{
 
 table{
 	width: 100%;
-	margin-bottom : .5em;
+	margin-bottom : 5em;
     table-layout: fixed;
 }
 
@@ -75,7 +75,7 @@ table{
 }
 
 td, th {
-	padding: .7em;
+	padding: .5em;
 	margin: 0;
 	border: 1px solid #ccc;
 	text-align: center;
@@ -127,6 +127,8 @@ label{
 	text-align: left;
 }
 
+
+
 .grupo{
 	width: 50%;
 	display: inline-block;
@@ -137,7 +139,7 @@ label{
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	margin-top: 20px;
+	margin-top: 10px;
 	
 }
 
@@ -271,7 +273,7 @@ label{
 
 .filtros_registro{
 	width: 400px;
-	height: 40px;
+	height: 30px;
 }
 
 .filtros_div{
@@ -285,6 +287,8 @@ label{
 }
 
 .urgente{
+	color: white;
+	font-weight: bold;
 	background-color: rgb(216, 55, 55);
 
 }
@@ -292,7 +296,7 @@ label{
 .instrucoes{
 	position: absolute;
 	right: 20%;
-	top: 5%;
+	top: 20%;
 	padding: 15px;
 	width: 350px;
 	height: 60px;
@@ -307,5 +311,6 @@ label{
 	margin-bottom: 5px;
 
 }
+
 
 
