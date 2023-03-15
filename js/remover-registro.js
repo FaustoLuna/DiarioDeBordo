@@ -1,18 +1,14 @@
-var registros = document.querySelectorAll(".registro");
-var tabela = document.querySelector("tbody");
-
-tabela.addEventListener("click", function(event) {
-  if (event.target.classList.contains("info-action")) {
-    var senha = prompt("Digite a senha para realizar a exclusão do Registro");
-
-    if (senha === "123456") {
-      event.target.classList.add("fadeOut");
-      setTimeout(function() {
-        event.target.parentNode.remove();
-      }, 500);
-    } else {
-      alert("Senha incorreta");
-    }
+const excluirLinha = document.querySelector("#tabela-registros");
+excluirLinha.addEventListener("click", function(event) {
+  if (event.target && event.target.classList.contains("btn-excluir")) {
+    
+    const linha = event.target.closest("tr");
+    const confirmacao = confirm("Deseja realmente excluir o registro?");
+ 
+    setTimeout(function() {
+      if (confirmacao) {
+        linha.remove();
+      }
+    }, 500);
   }
 });
-

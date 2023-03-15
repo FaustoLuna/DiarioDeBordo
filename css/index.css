@@ -255,9 +255,8 @@ label{
 	font-family: 'Courier New', Courier, monospace;
 }
 
-.info-action:hover{
-	
-	transform: scale(1.3);
+.fas:hover{	
+	transform: scale(1.2);
 	transition: 100ms ease-in-out;
 	cursor: pointer;	
 }

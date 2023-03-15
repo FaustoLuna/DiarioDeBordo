@@ -55,8 +55,11 @@ var botaoAdicionar = document.querySelector("#adicionar-registro");
 				nome: form.nome.value,
 				assunto: form.assunto.value,
 				comentario: form.comentario.value,
-				status: form.status.value,					
+				status: form.status.value,
+										
 			}			
+
+			
 			
 			return regristro;
 		}
@@ -71,8 +74,8 @@ var botaoAdicionar = document.querySelector("#adicionar-registro");
 			registroTr.appendChild(montaTd(registro.comentario, "info-comentario"));
 			registroTr.appendChild(montaTd(registro.status, "info-status"));
 			registroTr.appendChild(montaTd(dataHora, "info-data"));
-			registroTr.appendChild(montaTd(iconeX, "info-action"));
-			
+			registroTr.appendChild(montaTd(registro.action, "info-action"));
+		
 			var data = new Date()
 			const dia = String(data.getDate()).padStart(2, '0')
 			const mes = String(data.getMonth()+1).padStart(2, '0')
@@ -85,18 +88,24 @@ var botaoAdicionar = document.querySelector("#adicionar-registro");
 			const horaAtual = `${horas}:${minutos}:${segundos}`
 	
 			dataHora = `${dataAtual} - ${horaAtual}`
-
-			iconeX = "X"
 			
 			return registroTr;	
 		}
 
-		function montaTd(dado,classe){
+		function montaTd(dado, classe) {
 			var td = document.createElement("td");
-			td.textContent = dado;
 			td.classList.add(classe);
+			
+			if (classe === "info-action") {
+			  var icon = document.createElement("i");
+			  icon.classList.add("fas", "fa-trash", "btn-excluir");
+			  td.appendChild(icon);
+			} else {
+			  td.textContent = dado;
+			}
 			return td;
-		}
+		  }
+		  
 
 			var data = new Date()
 			const dia = String(data.getDate()).padStart(2, '0')
@@ -112,9 +121,6 @@ var botaoAdicionar = document.querySelector("#adicionar-registro");
 			dataHora = `${dataAtual} - ${horaAtual}`
 	
 			
-			var icone = new Date()
-			iconeX = "X"
-	
 
 		
 
