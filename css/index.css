@@ -119,6 +119,12 @@ label{
 
 .campo-comentario{
 	height: 100px;
+	
+}
+
+.info-comentario {
+    white-space: pre-line;
+	text-align: left;
 }
 
 .grupo{

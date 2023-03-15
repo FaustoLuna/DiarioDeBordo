@@ -15,3 +15,4 @@ tabela.addEventListener("click", function(event) {
     }
   }
 });
+

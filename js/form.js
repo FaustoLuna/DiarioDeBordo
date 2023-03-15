@@ -4,8 +4,7 @@ var botaoAdicionar = document.querySelector("#adicionar-registro");
 
 			var form = document.querySelector("#form-adiciona") 
 			var regristro = obtemRegistroDoFormulario(form);
-
-
+			
 			adicionaRegistroNaTabela(regristro);
 			
 			form.reset();
@@ -20,7 +19,6 @@ var botaoAdicionar = document.querySelector("#adicionar-registro");
 			  },100)
 		
 });
-
 		function adicionaRegistroNaTabela(regristro){
 			var registroTr = montaTr(regristro);
 			var tabela = document.querySelector("#tabela-registros");		
@@ -122,5 +120,3 @@ var botaoAdicionar = document.querySelector("#adicionar-registro");
 
 		
 		
-		
-	
